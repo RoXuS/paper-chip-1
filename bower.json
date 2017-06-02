@@ -20,17 +20,17 @@
     "/test/"
   ],
   "dependencies": {
-    "polymer": "^1.1.0",
-    "iron-a11y-keys": "^1.0.5",
-    "iron-behaviors": "^1.0.0",
-    "iron-icon": "^1.0.0",
-    "iron-iconset-svg": "^1.0.0",
-    "iron-flex-layout": "^1.0.0",
-    "paper-material": "^1.0.0",
-    "paper-styles": "^1.0.0"
+    "polymer": "^2.0.0",
+    "iron-a11y-keys": "^2.0.0",
+    "iron-behaviors": "^2.0.0",
+    "iron-icon": "^2.0.0",
+    "iron-iconset-svg": "^2.0.0",
+    "iron-flex-layout": "^2.0.0",
+    "paper-material": "^2.0.0",
+    "paper-styles": "^2.0.0"
   },
   "devDependencies": {
-    "iron-component-page": "^1.0.0",
+    "iron-component-page": "^2.0.0",
     "web-component-tester": "*"
   }
 }

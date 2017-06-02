@@ -44,20 +44,20 @@ Basic chip with single letter instead of an icon
         
         font-family: 'Roboto', 'Noto', sans-serif;
                 
-        @apply(--paper-chip);
+        @apply --paper-chip;
       }
       
       paper-material#paperContainer {
         border-radius: 16px;
         background-color: var(--paper-chip-background-color, #fff);
-        @apply(--paper-chip-paper-container);
+        @apply --paper-chip-paper-container;
       }
       
       .main-container {
         background-color: var(--paper-chip-background-color, --paper-grey-300);
         position: relative;
         color: var(--paper-chip-secondary-text-color, --paper-grey-600);
-        @apply(--layout-vertical);
+        @apply --layout-vertical;
       }
       /* pressed state */
       :host([pressed]) .main-container {
@@ -67,8 +67,8 @@ Basic chip with single letter instead of an icon
       .chip-container {
         box-sizing: border-box;
         height: 32px;
-        @apply(--layout-horizontal);
-        @apply(--layout-center);
+        @apply --layout-horizontal;
+        @apply --layout-center;
       }
 
       .main-container
@@ -80,9 +80,9 @@ Basic chip with single letter instead of an icon
         font-size: 16px;
         width: 32px;
         height: 32px;
-        @apply(--layout-horizontal);
-        @apply(--layout-center);
-        @apply(--layout-center-justified);
+        @apply --layout-horizontal;
+        @apply --layout-center;
+        @apply --layout-center-justified;
       }
       .icon-container ::content .icon {
         width: 32px;
@@ -95,7 +95,7 @@ Basic chip with single letter instead of an icon
         font-weight: bold;
         background-color: var(--paper-chip-icon-background-color, --paper-grey-600);
         color: var(--paper-chip-icon-text-color, #fff);
-        @apply(--layout-flex);
+        @apply --layout-flex;
       }
       .icon-container ::content .icon svg {
         margin: 4px;
@@ -111,10 +111,10 @@ Basic chip with single letter instead of an icon
         padding-right: 12px;
         padding-bottom: 8px;
         padding-left: 8px;
-        @apply(--layout-flex-auto);
-        @apply(--layout-self-center);
+        @apply --layout-flex-auto;
+        @apply --layout-self-center;
         
-        @apply(--paper-chip-label-container);
+        @apply --paper-chip-label-container;
       }
       :host([no-image]) .label-container {
         padding-left: 12px;
@@ -134,8 +134,8 @@ Basic chip with single letter instead of an icon
         height: 24px;
         margin-left: 0px;
         margin-right: 4px;
-        @apply(--layout-horizontal);
-        @apply(--layout-center-center);
+        @apply --layout-horizontal;
+        @apply --layout-center-center;
       }
       :host(:not([removable])) .remove-btn-container {
         display: none;
@@ -147,12 +147,11 @@ Basic chip with single letter instead of an icon
         cursor: pointer;
         background-color: var(--paper-chip-removebtn-background-color, --paper-grey-500);
         color: var(--paper-chip-removebtn-icon-color, --paper-grey-300);
-        @apply(--layout-horizontal);
-        @apply(--layout-center-center);
+        @apply --layout-horizontal;
+        @apply --layout-center-center;
       }
       .remove-btn iron-icon {
         padding: 2px;
-        
         height: 16px;
         width: 16px;
       }
